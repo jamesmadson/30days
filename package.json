@@ -1,0 +1,21 @@
+{
+  "author": "James Madson",
+  "name": "30days",
+  "description": "A design exploration and exercise.",
+  "version": "0.1.0",
+  "homepage": "http://www.jamesmadson.me",
+  "licenses": {
+    "type": "Public",
+    "url": "30days.jamesmadson.me"
+  },
+  "bugs": "https://github.com/jamesmadson/30days/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jamesmadson/30days"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "sass-loader": "^4.0.0",
+    "susy": "^2.2.12"
+  }
+}

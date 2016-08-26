@@ -1,0 +1,28 @@
+title: 30 DAYS
+email: james@jamesmadson.me
+description: > # this means to ignore newlines until "baseurl:"
+  30 DAYS is a design exercise by James Madson to explore visual design principles on the web.
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "30days.jamesmadson.me" # the base hostname & protocol for your site
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+social:
+  twitter_username: jamesmadson
+  github_username:  jamesmadson
+  instagram_username:  jamesmadson
+
+navigation:
+ - title: Home
+   url: /index.html
+ - title: About
+   url: /about
+ - title: Contact
+   url: /contact
+
+# Build settings
+markdown: kramdown
+#theme: jm
