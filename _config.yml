@@ -7,7 +7,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "30days.jamesmadson.me" # the base hostname & protocol for your site
 
 sass:
-    sass_dir: _sass
+    sass_dir: assets/css/
     style: compressed
 
 social:

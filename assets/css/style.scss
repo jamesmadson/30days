@@ -1,13 +1,15 @@
 ---
 ---
 
+@import "../../bower_components/susy/sass/susy";
+
 // Susy
 $susy: (
   columns: 12,
   container: 1200px,
   gutters: 1/4,
   global-box-sizing: border-box,
-  debug: (image: show)
+  // debug: (image: show)
 );
 
 // Our variables
