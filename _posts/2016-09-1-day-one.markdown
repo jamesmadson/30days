@@ -1,7 +1,15 @@
 ---
 layout: post
 title:  "Day One"
-date:   2016-08-1 06:00:00 -0700
-categories: grid typography
+date:   2016-09-1 06:00:00 -0700
+custom_css: one
 ---
-Cool, this is my first post.
+
+<h1 class="animated fadeInLeft">Right on, this is my first day.</h1>
+
+<h4>My first day is a culmination of learning from the past month I took as a sort of design/life sabbatical.</h4>
+
+<p>I read a few <a href="https://www.goodreads.com/book/show/350962.Grid_Systems_in_Graphic_Design_Raster_Systeme_Fur_Die_Visuele_Gestaltung" title="Grid Systems in Graphic Design">excellent</a> <a href="https://www.goodreads.com/book/show/44735.The_Elements_of_Typographic_Style" title="The Elements of Typographic Style">books</a>, visited a <a href="beta.rallyinteractive.com">rad agency with rad folks getting inspire</a>, climbed some <a href="https://www.instagram.com/p/BJEUmQfhaiw/?taken-by=jamesmadson" title="Middle Teton Summit">mountains</a>, visited friends and <a href="https://www.instagram.com/p/BIx9hQ_hsyy/?taken-by=jamesmadson" title="Family hang time in Leavenworth, WA">family</a>, and <a href="https://twitter.com/stevemagness/status/771353496851329025" title="Why Time Off Makes You a Better Worker">rested</a>.
+</p>
+
+<p>You can read more about this project on the <a href="{{ site.baseurl }}/about">about page</a>.</p>

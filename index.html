@@ -1,11 +1,40 @@
 ---
-layout: default
 title: 30days
 ---
-<ul class="scroll-numbers animated fadeInRight">
-  {% for post in site.posts %}
-    <li>
-      <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}" desc="{{ post.title | escape }}">{{ post.date | date: "%-d" }}</a></h2>
-    </li>
-  {% endfor %}
-</ul>
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+{% include head.html %}
+
+<body>
+
+   {% include header.html %}
+
+<div class="content">
+   <div class="container">
+
+    <header class="header">
+      <h1 class="logo animated fadeInLeft">
+        <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+      </h1>
+      <p class="animated fadeInDown">A daily design exercise on the web exploring grids and layout, typography, color, motion, front-end code, writing, and more for the entire month of September, 2016.</p>
+    </header>
+    <ul class="scroll-numbers animated fadeInRight">
+      {% for post in site.posts reversed %}
+        <li>
+          <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}" desc="{{ post.title | escape }}">{{ post.date | date: "%-d" }}</a></h2>
+        </li>
+      {% endfor %}
+    </ul>
+
+  </div>
+</div><!-- end .content -->
+
+{% include scripts.html %}
+
+</body>
+
+</html>
