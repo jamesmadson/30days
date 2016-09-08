@@ -4,7 +4,62 @@ title:  "Day Two"
 date:   2016-09-2 06:00:00 -0700
 custom_css: two
 ---
-
-<h1 class="animated fadeInLeft">
-Cool, this is my second post.
+<header class="header animated fadeInBottom">
+<h1>
+  <span class="animated fadeInRight">D</span>
 </h1>
+<h1>
+  <span class="animated fadeInRight">e</span>
+</h1>
+<h1>
+  <span class="animated fadeInRight">s</span>
+</h1>
+<h1>
+  <span class="animated fadeInRight">i</span>
+</h1>
+<h1>
+  <span class="animated fadeInRight">g</span>
+</h1>
+<h1>
+  <span class="animated fadeInRight">n</span>
+</h1>
+<h1>
+  <span class="animated fadeInRight">L</span>
+</h1>
+<h1>
+  <span class="animated fadeInRight">i</span>
+</h1>
+<h1>
+  <span class="animated fadeInRight">f</span>
+</h1>
+<h1>
+  <span class="animated fadeInRight">e</span>
+</h1>
+</header>
+
+<p class="animated fadeInBottom text">Design has provided me with so much in my life. Five years ago I was twenty-five, starting out in my design career. I was frustrated, not knowing what to do next. I started to break down the pieces of my frustration, then began to connect the dots and outlining steps to realize my goals...the lightbulb went off. I was sketching, problem solving, creating, designing – life.</p>
+
+<figure>
+<img src="{{ "/assets/img/mt-baker-roman-wall.jpg" | prepend: site.baseurl }}" class="animated fadeIn" />
+<figcaption>The Roman Wall on Mt. Baker</figcaption>
+</figure>
+
+<p class="animated fadeInLeft text">This past July I took a sort of design/life sabbatical to check in with where I've been and where I want to go. Taking an Alpinism course on Mt. Baker, WA was one of the steps in achieving a larger goal of mine, climbing Denali. I have plenty of goals between running and climbing mountains, but what about Design? My career? I felt flat and lost.</p>
+
+<p class="animated fadeInLeft text">I knew going into nature would help me find the answer I was looking for. Climbing and running mountains has and still is the best way for me to meditate and provide analogies to help me figure life out.</p>
+
+<figure>
+<img src="{{ "/assets/img/mt-baker-summit.jpg" | prepend: site.baseurl }}"  class="animated fadeIn" />
+<figcaption>Mt. Baker Summit</figcaption>
+</figure>
+
+<p class="animated fadeIn text">After summiting Mt. Baker I asked one of our guides what some important lessons he's learned from the mountains in his 20+ years as an alpinist. "Being in the mountains helps you to appreciate the small things in life. Climbing mountains has shown me it's not about the summits, but the journey."</p>
+
+<figure>
+<img src="{{ "/assets/img/mt-baker-glacier.jpg" | prepend: site.baseurl }}" class="animated fadeIn" />
+<figcaption>Serac on Mt. Baker</figcaption>
+</figure>
+
+<p class="animated fadeIn text">So, design, my career, mountains, life... the answer was to continue aiming for summits that challenge me, intrigue me and fit with my aesthetic. All the while pursuing gratitude for the small moments, being present and enjoying the journey.</p>
+
+<h1 class="bottom-header">It's all about the Journey, man.</h1>

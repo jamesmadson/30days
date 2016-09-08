@@ -15,18 +15,24 @@
     <link rel="stylesheet" href="{{ "/assets/css/style.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/bower_components/animate.css/animate.min.css" | prepend: site.baseurl }}">
 
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src='{{ "/bower_components/smoothstate/jquery.smoothState.min.js" | prepend: site.baseurl }}' type="text/javascript"></script>
+
+
     {% if page.custom_css %}
       {% for stylesheet in page.custom_css %}
-      <link rel="stylesheet" href="/css/{{ stylesheet }}.css" media="screen" type="text/css">
+      <link rel="stylesheet" href="/assets/css/{{ stylesheet }}.css" media="screen" type="text/css">
       {% endfor %}
     {% endif %}
 
     {% if page.custom_js %}
       {% for js_file in page.custom_js %}
-      <script src='/javascripts/{{ js_file }}.js' type="text/javascript"></script>
+      <script src='/assets/js/{{ js_file }}.js' type="text/javascript"></script>
       {% endfor %}
     {% endif %}
-    <!--{% if site.google_analytics %} {% include google_analytics.html %} {% endif %}-->
+    {% if jekyll.environment == 'production' %}
+      {% include analytics.html %}
+    {% endif %}
     <script type="text/javascript">
     <!--
       function toggle_visibility(id) {
@@ -37,5 +43,35 @@
             e.style.display = 'block';
       }
     //-->
-  </script>
+    </script>
+    <script type="text/javascript">
+    $(function(){
+'use strict';
+var $page = $('#main'),
+    options = {
+      debug: true,
+      prefetch: true,
+      cacheLength: 4,
+      onStart: {
+        duration: 350, // Duration of our animation
+        render: function ($container) {
+          // Add your CSS animation reversing class
+          $container.addClass('is-exiting');
+          // Restart your animation
+          smoothState.restartCSSAnimations();
+        }
+      },
+      onReady: {
+        duration: 0,
+        render: function ($container, $newContent) {
+          // Remove your CSS animation reversing class
+          $container.removeClass('is-exiting');
+          // Inject the new content
+          $container.html($newContent);
+        }
+      }
+    },
+    smoothState = $page.smoothState(options).data('smoothState');
+});
+    </script>
 </head>

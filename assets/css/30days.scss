@@ -40,12 +40,32 @@ body {
   }
 }
 
+.postNav {
+  position: fixed;
+  padding: 1em;
+  top: 0;
+  right: 0;
+  font-weight: bold;
+  border: 1px solid rgba(255,255,255,0.25);
+  text-align: center;
+  font-size: 1em;
+
+  a {
+    display: block;
+    border: 1px solid rgba(255,255,255,0.25);
+    padding: 1em;
+    &:hover {
+      color: $black;
+      background: rgba(255,255,255,0.1);
+    }
+  }
+}
+
 .header {
   width: 100%;
   display: block;
 
   .logo {
-
     -webkit-animation-duration: 3s;
     -moz-animation-duration: 3s;
     -ms-animation-duration: 3s;
@@ -103,12 +123,39 @@ a {
   -moz-animation-delay: 4s;
   -ms-animation-delay: 4s;
 
+  &.scroll-pagination {
+    position: fixed;
+    bottom: -1em;
+    left: 55px;
+    opacity: .2;
+    background-color: rgba( 255, 255, 255, 0.2);
+    border-top: 1px $white solid;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -ms-animation-delay: 1s;
+
+    li h2 {
+      margin: 0;
+
+      a {
+        font-size: 6em;
+        color: rgba(255,255,255,0.5);
+
+        &:hover {
+          color: $black;
+        }
+      }
+    }
+  }
+
   &::-webkit-scrollbar {
     display: none;
   }
 
   li {
     display: inline-block;
+    padding-right: 1em;
+    text-align: center;
 
     a {
       font-size: 8em;
@@ -117,7 +164,6 @@ a {
 
       &:hover {
         color: $black;
-        // Transition
       }
     }
   }

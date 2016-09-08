@@ -10,6 +10,9 @@ sass:
     sass_dir: assets/css/
     style: compressed
 
+# Google services
+google_analytics: UA—5440985-16
+
 social:
   twitter_username: jamesmadson
   github_username:  jamesmadson

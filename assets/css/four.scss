@@ -1,0 +1,36 @@
+.Four {
+  background: $yellow;
+  overflow: hidden;
+  position: absolute;
+  top: -10px;
+  bottom: 0;
+  left: 0;
+
+  p {
+    font-size: 10px;
+    display: block;
+    position: fixed;
+    top: 100px;
+    left: 75;
+    font-weight: bold;
+    color: $black;
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+
+    a {
+      color: $white;
+
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+
+  .post-link {
+    color: $black !important;
+    &:hover {
+      color: $yellow !important;
+    }
+  }
+}

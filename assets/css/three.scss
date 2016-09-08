@@ -1,0 +1,86 @@
+@import 'https://fonts.googleapis.com/css?family=Poppins:300,700';
+
+.Three {
+  padding-bottom: 5em;
+  background-image: url(../img/concrete_seamless.png);
+  background-color: $white;
+  overflow-x: scroll;
+  width: 100%;
+  border-left: 55px $green solid;
+  margin: 0;
+  height: 3000px;
+
+  p {
+    @include span(9);
+    font-size: 1em;
+    line-height: 1.75em;
+    color: $black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    -webkit-column-gap: 30px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 30px; /* Firefox */
+    column-gap: 30px;
+    left: 120px;
+    display: block;
+    position: absolute;
+    z-index: 2;
+
+    strong {
+      color: $black;
+      opacity: 0.5;
+    }
+  }
+
+  h1 {
+    color: $green;
+    font-size: 65em;
+    display: block;
+    position: absolute;
+    top: -1em;
+    right: -20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    z-index: -1;
+    mix-blend-mode: multiply;
+  }
+
+  .square {
+    background-color: transparent;
+    @include span(12);
+    height: 3000px;
+    background-image: url(../img/Sagittarius.png);
+    mix-blend-mode: overlay;
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    top: -0px;
+    right: -10%;
+    -webkit-animation-duration: 6s;
+    -moz-animation-duration: 6s;
+    -ms-animation-duration: 6s;
+  }
+
+  .diagonal-line {
+    left: -33%;
+    width: 2000px;
+    height: 1px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+    display: block;
+    position: absolute;
+    top: 33%;
+    background-color: $green;
+    //opacity: 0.5;
+  }
+
+  .post-link {
+    color: $green !important;
+    mix-blend-mode: overlay;
+  }
+}

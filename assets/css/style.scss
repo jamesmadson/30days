@@ -24,14 +24,18 @@ $spacing-unit:     30px;
 $white:            #FFFFFF;
 $black:            #252525;
 $grey:             #AEB1A0;
-$grey-light:       lighten($grey, 40%);
+$grey-light:       #E8E8E8;
 $grey-dark:        darken($grey, 25%);
+$dark-tan:         #A6A69E;
 $red:              #EF5124;
-$yellow:           #FFDC01;
+$yellow:           #FDB813;
 $baby_blue:        #AED7E9;
+$green:            #27B87B;
 
 @import "30days";
 @import "about";
 
 @import "one";
 @import "two";
+@import "three";
+@import "four";
